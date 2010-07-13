@@ -47,9 +47,6 @@ function check_websites_for_change() {
 					$oldpage = read_content($filename);
 					//something changed, send email alert
 					if(md5($oldpage) != md5($response)) {
-						echo "Olad Page is ".$oldpage;
-						echo "Response is ".$response;
-						echo "Page changed for ".$websiteurl;
 						$subject = "URL Content Has Changed for ".$websitename;
 						$body = "URL: ".$websiteurl." Content Changed";
 						email_notify($subject, $body);
