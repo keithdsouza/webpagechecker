@@ -1,0 +1,1 @@
+Checks a webpage for changes, if there is a change it emails the given user about it. Very basic version which does the job.
